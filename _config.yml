@@ -14,4 +14,4 @@ github_username:  nepente
 markdown: kramdown
 
 #Syntax highlighter
-highlighter: rouge
+#highlighter: rouge
