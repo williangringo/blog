@@ -1,4 +1,4 @@
-# blog
+<h1><a href="http://blog.nepente.io/" target="_blank">blog.nepente.io</a></h1>
 
 Seja bem-vindo(a)! :pray:  
 
