@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if page.title %}{{ page.title }} &mdash; {{ site.npnt.title }}{% else %}{{ site.npnt.title }} &mdash; {{ site.npnt.subtitle }}{% endif %}</title>
+    {% if site.npnt.google_font %}<link href="https://fonts.googleapis.com/css?family={{ site.npnt.google_font }}" rel="stylesheet" type="text/css">{% endif %}
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    {% stylesheet main %}
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/images/{{ site.npnt.logo }}"/>
+    <link href="{{ site_url }}/feed.xml" rel="alternate" type="application/rss+xml" title="{{ site.npnt.title }}" />
+    <meta name="title" content="{% if page.title %}{{ page.title }} {% else %}{{ site.npnt.title }}{% endif %}">
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+    {% if page.site.gplus %}<link rel="publisher" href="https://plus.google.com/{{ site.npnt.gplus }}">{% endif %}
+    {% if page.author.gplus %}<link rel="author" href="https://plus.google.com/{{ page.author.gplus }}">{% endif %}
+    <meta property="og:title" content="{% if page.title %}{{ page.title }} {% else %}{{ site.npnt.title }}{% endif %}"/>
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}"/>
+    {% if page.cover_image %}
+    <meta property="og:image" content="{{ site.url }}/images/{{ page.cover_image }}"/>
+    {% if page.main_image %}
+    <meta property="og:image" content="{{ site.url }}/images/{{ page.main_image }}"/>
+    {% endif %}
+    <meta property="og:image" content="{{ site.url }}/images/{{ site.npnt.logo }}"/>
+    {% endif %}
+    {% if page.excerpt %}
+    <meta property="og:description" content="{{ page.excerpt }}"/>
+    <meta name="description" content="{{ page.excerpt }}"/>
+    {% endif %}
+    <meta property="og:site_name" content="{{ site.npnt.title }}">
+</head>
+<body>
+
+<section class="site-nav">
+    <header>
+        <nav id="navigation">
+            <a class="brand" href="http://nepente.io/">
+                <img src="/images/{{ site.npnt.logo }}" alt="nepente">
+            </a>
+            <a href="/" class="home">
+              Blog
+            </a>
+            <a href="{{ site.npnt.about_link }}" class="home">
+              Quem somos
+            </a>
+            <a href="{{ site.npnt.contact_link }}" class="home">
+              Contato
+            </a>
+        </nav>
+    </header>
+</section>
+
+{{ content }}
+
+<footer class="site-footer">
+    <div class="container">
+        &copy; {{ site.time | date: "%Y" }}
+
+        <nav>
+            <a href="{{ site.npnt.url }}">{{ site.npnt.company }}</a> &middot;
+            <a href="/">Blog</a> &middot;
+            {% if site.npnt.about_link %}
+              <a href="{{ site.npnt.about_link }}">Quem somos</a>
+            {% endif %}
+            {% if site.npnt.contact_link %}
+              <a href="{{ site.npnt.contact_link }}">Contato</a>
+            {% endif %}
+        </nav>
+
+        <nav class="social">
+          {% if site.npnt.github %}
+            <a href="http://github.com/{{ site.npnt.github }}" title="Fork on GitHub" target="_blank"><i class="fa fa-github"></i></a>
+          {% endif %}
+          {% if site.npnt.twitter %}
+            <a href="https://twitter.com/{{ site.npnt.twitter }}" title="Siga no Twitter Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+          {% endif %}
+          {% if site.npnt.gplus %}
+            <a href="https://plus.google.com/{{ site.npnt.gplus }}" title="Adicione em seu círculo" target="_blank"><i class="fa fa-google-plus"></i></a>
+          {% endif %}
+        </nav>
+        <p>Incorporated theme by <a href="https://sendtoinc.com">Inc</a></p>
+    </div>
+</footer>
+
+{% include _scripts.html %}
+
+</body>
+</html>

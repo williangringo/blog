@@ -1,16 +1,134 @@
-# Site settings
-title: nepente
-email: contato@nepente.io
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://nepente.io" # the base hostname & protocol for your site
-twitter_username: nepente_io
-github_username:  nepente
+npnt:
+  # Blog Information
+  title:        "nepente blog"
+  subtitle:     "Nossas ideias construídas com Jekyll, café e amor"
+  cover_image:  blog-cover.jpg
+  logo:         logo.png
 
-# Build settings
-markdown: kramdown
+  # Company information
+  company:      nepente
+  url:          http://nepente.io/
+  github:       nepente
+  twitter:      nepente_io
+  gplus:        '106736426804386918228'
+  about_link:   /quem-somos.html
+  contact_link: /contato.html
+
+  # Comments
+  disqus:
+    shortname:  nepente
+
+  # Sharing settings
+  sharing:
+    twitter:    true
+    facebook:   true
+    gplus:      true
+    hn:         false
+
+
+ # Analytics
+  analytics:
+    google: false # Add tracking code in _includes/_google-analytics.html
+
+
+  # Google Fonts
+  # eg. 'Droid+Sans:400,700|Droid+Serif:400,700'
+  google_font: 'Droid+Sans:400,700'
+
+  # Setup your fonts, colors etc at _assets/stylesheets/main.scss
+
+url:         http://blog.nepente.io
+source:      .
+destination: ./_site
+plugins:     ./_plugins
+layouts:     ./_layouts
+include:     ['.htaccess']
+exclude:     []
+timezone:    nil
+
+# Show future posts
+future:      false
+show_drafts: nil
+limit_posts: 0
 highlighter: true
-permalink: pretty
+
+relative_permalinks: true
+
+permalink:     pretty
+paginate_path: 'page:num'
+paginate: 10
+
+markdown:      kramdown
+markdown_ext:  markdown,mkd,mkdn,md
+textile_ext:   textile
+
+gems: [jemoji, font-awesome-less]
+
+excerpt_separator: "<!-- more -->"
+
+safe:        false
+host:        0.0.0.0
+port:        4000
+baseurl:     ""
+lsi:         false
+
+rdiscount:
+  extensions: []
+
+redcarpet:
+  extensions: []
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  use_coderay: false
+
+  coderay:
+    coderay_wrap: div
+    coderay_line_numbers: inline
+    coderay_line_numbers_start: 1
+    coderay_tab_width: 4
+    coderay_bold_every: 10
+    coderay_css: style
+
+redcloth:
+  hard_breaks: true
+
+#
+# jekyll-assets: see more at https://github.com/ixti/jekyll-assets
+#
+assets:
+
+  dirname: assets
+  baseurl: /assets/
+  sources:
+    - _assets/javascripts
+    - _assets/stylesheets
+    - _assets/images
+  js_compressor: uglifier
+  css_compressor: sass
+  cachebust: none
+  cache: false
+  gzip: [ text/css, application/javascript ]
+  debug: false
+
+#Authors
+authors:
+  andre:
+    name: André Poleza
+    twitter: andrepoleza
+    bio: Carinha que mora logo ali
+    gravatar: ba4840e6419306fdf1c47760e1176133
+  diego:
+    name: Diego B. Fernandez
+    twitter: diegobfernandez
+    bio: Carinha que mora logo ali
+    gravatar: 8d5b027e01ba424b54b068705a5be232
+  felipe:
+    name: Felipe Lima
+    twitter: limafelipe92
+    bio: Carinha que mora logo ali
+    gravatar: e9326e57fea793df26fda314ca3bfea6
