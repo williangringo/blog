@@ -23,7 +23,7 @@ npnt:
 
  # Google Analytics
   analytics:
-    google: false
+    google: true
 
 
   # Google Fonts
