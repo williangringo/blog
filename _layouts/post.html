@@ -22,7 +22,6 @@ layout: base
 
         <section>
             {{ content }}
-            {% include _social.html %}
         </section>
 
         <footer>
@@ -40,6 +39,9 @@ layout: base
         <section>
             {% include _disqus.html %}
         </section>
+        {% endif %}
+        {% if site.npnt.add-this %}
+        {% include _add-this.html %}
         {% endif %}
     </div>
 </article>

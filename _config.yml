@@ -18,13 +18,8 @@ npnt:
   disqus:
     shortname:  nepente
 
-  # Sharing settings
-  sharing:
-    twitter:    true
-    facebook:   true
-    gplus:      true
-    hn:         false
-
+  # Configurações do AddThis
+  add-this: true
 
  # Analytics
   analytics:
@@ -96,6 +91,10 @@ kramdown:
 
 redcloth:
   hard_breaks: true
+
+addthis:
+  pubid: ra-54b7473e059fdcaf
+  image: /path/to/share/img
 
 #Authors
 authors:
