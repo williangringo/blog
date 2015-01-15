@@ -1,11 +1,11 @@
 npnt:
-  # Blog Information
+  # Informações do blog
   title:        "nepente"
   subtitle:     "Nossas ideias construídas com Jekyll, café e amor"
   cover_image:  blog-cover.jpg
   logo:         logo.png
 
-  # Company information
+  # Informações da empresa
   company:      nepente
   url:          http://nepente.io/
   github:       nepente
@@ -14,23 +14,21 @@ npnt:
   about_link:   /quem-somos.html
   contact_link: /contato.html
 
-  # Comments
+  # Comentários
   disqus:
     shortname:  nepente
 
-  # Configurações do AddThis
+  # AddThis
   add-this: true
 
- # Analytics
+ # Google Analytics
   analytics:
     google: false # Add tracking code in _includes/_google-analytics.html
 
 
   # Google Fonts
-  # eg. 'Droid+Sans:400,700|Droid+Serif:400,700'
+  # ex.: 'Droid+Sans:400,700|Droid+Serif:400,700'
   google_font: 'Droid+Sans:400,700'
-
-  # Setup your fonts, colors etc at _assets/stylesheets/main.scss
 
 url:         http://blog.nepente.io
 source:      .
@@ -41,7 +39,7 @@ include:     ['.htaccess']
 exclude:     []
 timezone:    nil
 
-# Show future posts
+# Exibição de futuras postagens
 future:      false
 show_drafts: nil
 limit_posts: 0
@@ -96,7 +94,7 @@ addthis:
   pubid: ra-54b7473e059fdcaf
   image: /path/to/share/img
 
-#Authors
+# Autores
 authors:
   andre:
     name: André Poleza
