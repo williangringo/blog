@@ -23,11 +23,10 @@ npnt:
 
  # Google Analytics
   analytics:
-    google: false # Add tracking code in _includes/_google-analytics.html
+    google: false
 
 
   # Google Fonts
-  # ex.: 'Droid+Sans:400,700|Droid+Serif:400,700'
   google_font: 'Droid+Sans:400,700'
 
 url:         http://blog.nepente.io
