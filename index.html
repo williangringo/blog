@@ -36,8 +36,8 @@ layout: base
             <p>{{ post.excerpt }}</p>
             <div class="meta">
               {% assign author = site.authors[post.author] %}
-              {% if author %} Written By <address>{{ author.name }}</address> &mdash;{% endif %}
-                <time pubdate datetime="{{ post.date | date: "%Y-%d-%B" }}" title="{{ post.date | date: "%B %d, %Y" }}">{{ post.date | date: "%B %d, %Y" }}</time>
+              {% if author %} Escrito por <address>{{ author.name }}</address> &mdash;{% endif %}
+                <time pubdate datetime="{{ post.date | date: "%m/%d/%Y" }}" title="{{ post.date | date: "%m/%d/%Y" }}">{{ post.date | date: "%m/%d/%Y" }}</time>
             </div>
         </div>
         <hr>

@@ -7,7 +7,7 @@ cover_image: blog-cover.jpg
 
 excerpt: "Incorporated provides great typography, responsive design, author details, semantic markup and more."
 
-author: diego
+author: felipe
 ---
 
 Incorporated :coffee: and :heart: provides a great typography, :+1: responsive design, author details, semantic markup and more.

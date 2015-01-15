@@ -1,6 +1,6 @@
 npnt:
   # Blog Information
-  title:        "nepente blog"
+  title:        "nepente"
   subtitle:     "Nossas ideias construídas com Jekyll, café e amor"
   cover_image:  blog-cover.jpg
   logo:         logo.png
@@ -56,7 +56,7 @@ relative_permalinks: true
 
 permalink:     pretty
 paginate_path: 'page:num'
-paginate: 10
+paginate: 5
 
 markdown:      kramdown
 markdown_ext:  markdown,mkd,mkdn,md
@@ -96,24 +96,6 @@ kramdown:
 
 redcloth:
   hard_breaks: true
-
-#
-# jekyll-assets: see more at https://github.com/ixti/jekyll-assets
-#
-assets:
-
-  dirname: assets
-  baseurl: /assets/
-  sources:
-    - _assets/javascripts
-    - _assets/stylesheets
-    - _assets/images
-  js_compressor: uglifier
-  css_compressor: sass
-  cachebust: none
-  cache: false
-  gzip: [ text/css, application/javascript ]
-  debug: false
 
 #Authors
 authors:
